@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  width: 40%;
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  text-decoration: none;
+  padding-bottom: 3vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+h1 {
+  margin: 0;
+  text-align: left;
+  letter-spacing: 7px;
+  font-size: 4em;
+  margin-left: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 2%;
+}
+.article {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.article a {
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article p {
+  height: 20vh;
+  font-size: 0.9em;
+}
+.article img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  margin-bottom: 1vh;
+}
+input[type=button] {
+  padding: 8px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  outline: none;
+  margin-bottom: 3vh;
+  margin-left: 5px;
+  transition: all 0.5s;
+  background-color: rgb(232, 232, 232);
+}
+input{
+  outline: none;
+  border: 2px solid black;
+  padding: 8px 1%;
+  font-size: 0.9em;
+  border-radius: 3px;
+  margin-bottom: 1vh;
+}
+.buttons-wrap, .search-wrap{
+  text-align: right;
+  margin-right: 30px;
 }
